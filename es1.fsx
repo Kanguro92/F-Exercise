@@ -29,10 +29,7 @@ let isPariString n =
 
 che, applicata a un intero n, restituisce una stringa che descrive se n e' pari o dispari *)
 
-let s n =
-    match (isPariString n) with
-    | "dispari" -> string n + " è un numero dispari"
-    | _ -> string n + " è un numero pari"
+let s n = string n + " è un numero " + isPariString n
     
 // Esempio:
 s 4 // "4 e' un numero pari"
