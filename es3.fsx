@@ -31,7 +31,6 @@ let areaOpt fig =
     | _ -> None
 
 // Esempi:
-
 let a1 = areaOpt ( Rettangolo(2.0,3.0) ) 
 // val a1 : float option = Some 6.0
 let a2 = areaOpt ( Rettangolo(2.0, -3.0) ) 
@@ -55,10 +54,8 @@ let printArea fig =
     | None -> "la figura non è ben definita"
 
 // Esempi:
-
 let as1 = printArea ( Quadrato 10. ) 
 //val as1 : string = "area: 100"
-
 let as2 = printArea ( Quadrato -10. ) 
 //val as2 : string = "la figura non e' ben definita"
 
@@ -78,7 +75,6 @@ let sommaArea (fig1,fig2) =
     | _ -> None
 
 // Esempi: 
-
 let sum1 = sommaArea ( Rettangolo(2.,5.) , (Quadrato 10.)) ;;
 //  val sum1 : float option = Some 110..0
 let sum2 = sommaArea ( Rettangolo(2.,-5.),  (Quadrato 10.)) ;;
