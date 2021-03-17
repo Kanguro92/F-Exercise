@@ -1,6 +1,6 @@
 // ESERCIZI 
    
-(* 1) Definire la funzione
+(* Definire la funzione
 
   Or : bool ->  bool -> bool
 
@@ -11,7 +11,7 @@ let Or x y =
     | (false, false) -> false
     | _ -> true
 
-(* 2) Definire la funzione
+(* Definire la funzione
 
   isPariString : int -> string
 
